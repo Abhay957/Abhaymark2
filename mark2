@@ -1,0 +1,52 @@
+var readLine = require('readline-sync');
+var score = 0;
+var user = readLine.question('Hey what is your name? ');
+console.log('*********');
+console.log('Welcome to the quiz ' + user + '!');
+console.log('*********');
+
+function quiz(question, answer) {
+  var ans = readLine.question('\n' + question);
+  if (answer === ans) {
+    console.log('Correct!');
+    score = score + 1;
+  }
+  else {
+    console.log('Incorrect!');
+    console.log('Correct answer is', answer);
+  }
+  console.log('************');
+  console.log(user + ' your current score is ' + score);
+}
+
+var questions = [
+  {
+    question: 'Who was not in the original Avengers team? ',
+    answer: 'captain america'
+  },
+
+  {
+    question: 'Who is the publisher for Avenger Comic Books? ',
+    answer: 'dc comics'
+  },
+
+  {
+    question: 'Which villain is Wonder Man brother? ',
+    answer: 'thor'
+  },
+
+  {
+    question: 'Who is Thor to Asgardian god Loki? ',
+    answer: 'father'
+  },
+
+  {
+    question: 'How often was the initial Avengers series published? ',
+    answer: 'quarterly'
+  }];
+
+for (var i = 0; i < questions.length; i = i + 1) {
+  var sets = questions[i];
+  quiz(sets.question, sets.answer);
+}
+console.log('\n' + 'Thanks for playing ' + user + '!' + '\n' + 'Your final score is ' + score);
