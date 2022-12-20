@@ -1,9 +1,9 @@
 # "Fandom quiz on Marvels"
 
-Tech stack:
+<h2>Tech stack:</h2>
 A CLI app made with nodejs in repl.it .
 
-About project:
+<h2>About project:</h2>
 This project was made as part of level zero of neogcamp.
 
 "Fandom quiz on Marvels" The quiz consists of 5 questions about avengers.
@@ -14,6 +14,6 @@ For an incorrect answer you get zero point and also you get to know the correct 
 
 Final score is shown at the end.
 
-CLI app look:
+<h2>CLI app look:</h2>
 
 <img src="images/marktwo.png" >
